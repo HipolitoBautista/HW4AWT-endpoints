@@ -1,0 +1,85 @@
+[2023-09-24T18:14:01.067125+00:00] AWT.INFO: request received --student--
+[2023-09-24T18:14:01.071556+00:00] AWT.INFO: unknown resource request...
+[2023-09-24T18:14:26.164030+00:00] AWT.INFO: request received --students--
+[2023-09-24T18:14:45.629541+00:00] AWT.INFO: request received --students--
+[2023-09-24T18:14:45.632300+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T18:15:11.800448+00:00] AWT.INFO: request received --students--
+[2023-09-24T18:15:11.807066+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T18:30:55.847062+00:00] AWT.INFO: request received --students--
+[2023-09-24T18:30:55.851752+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T18:30:55.874856+00:00] AWT.ERROR: [mysqli_sql_exception: Table 'awt.student' doesn't exist in /var/www/html/class.students.php:53 Stack trace: #0 /var/www/html/class.students.php(53): mysqli->prepare(' select\n       ...') #1 /var/www/html/class.students.php(31): Students->getAllStudents() #2 /var/www/html/class.request.php(39): Students->GET(Array) #3 /var/www/html/index.php(12): Request->process(Array) #4 {main}]
+[2023-09-24T19:09:08.264119+00:00] AWT.INFO: request received --students--
+[2023-09-24T19:09:08.269199+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T19:09:26.011686+00:00] AWT.INFO: request received --students--
+[2023-09-24T19:09:26.014214+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T19:11:11.555189+00:00] AWT.INFO: request received --students--
+[2023-09-24T19:11:11.558265+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T19:12:51.291347+00:00] AWT.INFO: request received --students--
+[2023-09-24T19:12:51.293699+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T19:16:11.347849+00:00] AWT.INFO: request received --students--
+[2023-09-24T19:16:11.349978+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T19:19:17.414620+00:00] AWT.INFO: request received --students--
+[2023-09-24T19:19:17.416068+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T19:32:15.368265+00:00] AWT.INFO: request received --students--
+[2023-09-24T19:32:15.370230+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T22:32:08.159710+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:32:46.089991+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:32:46.092252+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T22:44:01.040816+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:44:01.043409+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T22:44:08.267879+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:44:08.271293+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:44:45.123549+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:44:45.126062+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:44:47.747019+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:44:47.748831+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T22:45:06.012601+00:00] AWT.INFO: request received --applic--
+[2023-09-24T22:45:06.013042+00:00] AWT.INFO: unknown resource request...
+[2023-09-24T22:45:12.463404+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:45:12.465765+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T22:46:43.852303+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:46:43.854519+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T22:52:34.108950+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:52:34.110443+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:52:34.111110+00:00] AWT.ERROR: [mysqli_sql_exception: Unknown column '$1' in 'where clause' in /var/www/html/class.applicants.php:84 Stack trace: #0 /var/www/html/class.applicants.php(84): mysqli->prepare('SELECT *\n      ...') #1 /var/www/html/class.applicants.php(22): Applicants->getSingleApplicant('1') #2 /var/www/html/class.request.php(36): Applicants->GET(Array) #3 /var/www/html/index.php(13): Request->process(Array) #4 {main}]
+[2023-09-24T22:53:02.468753+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:53:02.470721+00:00] AWT.INFO: get fx ran request: [-1]
+[2023-09-24T22:53:44.713090+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:53:44.714463+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:54:01.249417+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:54:01.251285+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:54:11.821769+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:54:11.823110+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:54:11.823594+00:00] AWT.ERROR: [mysqli_sql_exception: Unknown column '$1' in 'where clause' in /var/www/html/class.applicants.php:84 Stack trace: #0 /var/www/html/class.applicants.php(84): mysqli->prepare('SELECT *\n      ...') #1 /var/www/html/class.applicants.php(22): Applicants->getSingleApplicant('1') #2 /var/www/html/class.request.php(36): Applicants->GET(Array) #3 /var/www/html/index.php(13): Request->process(Array) #4 {main}]
+[2023-09-24T22:54:32.300883+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:54:32.302228+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:54:32.303040+00:00] AWT.ERROR: [mysqli_sql_exception: Unknown column '$1' in 'where clause' in /var/www/html/class.applicants.php:84 Stack trace: #0 /var/www/html/class.applicants.php(84): mysqli->prepare('SELECT *\n      ...') #1 /var/www/html/class.applicants.php(22): Applicants->getSingleApplicant('1') #2 /var/www/html/class.request.php(36): Applicants->GET(Array) #3 /var/www/html/index.php(13): Request->process(Array) #4 {main}]
+[2023-09-24T22:55:23.064586+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:55:23.066489+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:55:23.067124+00:00] AWT.ERROR: [mysqli_sql_exception: Unknown column '$1' in 'where clause' in /var/www/html/class.applicants.php:85 Stack trace: #0 /var/www/html/class.applicants.php(85): mysqli->prepare('SELECT *\n      ...') #1 /var/www/html/class.applicants.php(22): Applicants->getSingleApplicant('1') #2 /var/www/html/class.request.php(36): Applicants->GET(Array) #3 /var/www/html/index.php(13): Request->process(Array) #4 {main}]
+[2023-09-24T22:55:36.850610+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:55:36.852581+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:56:36.433968+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:56:36.435599+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:56:36.436320+00:00] AWT.ERROR: [mysqli_sql_exception: Unknown column '$1' in 'where clause' in /var/www/html/class.applicants.php:85 Stack trace: #0 /var/www/html/class.applicants.php(85): mysqli->prepare('SELECT *\n      ...') #1 /var/www/html/class.applicants.php(22): Applicants->getSingleApplicant('1') #2 /var/www/html/class.request.php(36): Applicants->GET(Array) #3 /var/www/html/index.php(13): Request->process(Array) #4 {main}]
+[2023-09-24T22:58:01.535686+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:58:01.538077+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:58:21.354064+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:58:21.358003+00:00] AWT.INFO: get fx ran request: [1]
+[2023-09-24T22:58:27.666335+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T22:58:27.668961+00:00] AWT.INFO: get fx ran request: [2]
+[2023-09-24T23:07:48.277263+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:15:06.825667+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:16:00.071556+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:16:06.259977+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:16:12.476289+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:17:24.194408+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:18:23.679736+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:28:33.145775+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:44:29.745454+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:48:14.549452+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:48:49.078814+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:49:38.044099+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:50:48.658788+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:53:49.120213+00:00] AWT.INFO: request received --applicants--
+[2023-09-24T23:54:39.504213+00:00] AWT.INFO: request received --applicants--
