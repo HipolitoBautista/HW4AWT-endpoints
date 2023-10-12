@@ -1,0 +1,1 @@
+docker build -t awt/php:8.1-apache --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g) .

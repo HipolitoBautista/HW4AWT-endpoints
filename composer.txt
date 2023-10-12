@@ -1,0 +1,14 @@
+docker run --rm --interactive --tty  --volume /path/to/project/html/inc/composer:/app composer composer require monolog/monolog
+
+
+    environment:
+        - DBHOST=mysql-db
+        - DBUSER=root
+        - DBPWD=1TimePass!
+        - DBNAME=awt
+        - RLHOST=172.20.0.1
+        - RLPORT=6379
+        - RLPWD=awt2023
+        - RL_MAX=3
+        - RL_SECS=60
+
