@@ -2,16 +2,35 @@
 
 header('Content-Type: application/json; charset =utf-8');
 
-define("DBHOST",isset($_ENV["DBHOST"]) ? $_ENV["DBHOST"] : "mysql-db");
-define("DBUSER",isset($_ENV["DBUSER"]) ? $_ENV["DBUSER"] : "root");
-define("DBPWD",isset($_ENV["DBPWD"]) ? $_ENV["DBPWD"] : "1TimePass!");
-define("DBNAME",isset($_ENV["DBNAME"]) ? $_ENV["DBNAME"] : "awt");
+
+if (!isset($_SERVER["CONTENT_TYPE"]) || $_SERVER["CONTENT_TYPE"] != "application/json") {
+    http_response_code(403);
+    die("Thou shall not pass!!! Forbidden");
+}
 
 require_once './classes/class.handler.php';
 
 $request = new Request();
-$request->process($_SERVER)
+
+$result = $request->rateLimitCheck($_SERVER);
+
+if($result == 1){
+    $apiKeyCheck = $request->checkApiKey($_SERVER);
+    if($apiKeyCheck["key_id"] > 0 && !empty($apiKeyCheck["permissions"])){
+        $request->process($_SERVER, $apiKeyCheck["permissions"]);
+    } else {
+        http_response_code(401);
+        die('Access Denied');
+    }
+} else if($result == -1){
+    http_response_code(400);
+    die("Incomplete request data");
+}else{
+    http_response_code(429);
+    die("Too many requests! Rate limit exceeded.");
+}
 
 ?>
+
 
 

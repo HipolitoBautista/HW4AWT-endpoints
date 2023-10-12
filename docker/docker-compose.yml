@@ -8,4 +8,5 @@ services:
     ports:
         - 8036:80
     restart: unless-stopped
-
+    environment:
+    
